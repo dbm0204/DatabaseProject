@@ -34,7 +34,6 @@ public class Disease
 	public void setHazard(String hazard) {
 		this.hazard = hazard;
 	}
-	
-		
+			
 }
 	
