@@ -16,7 +16,7 @@ public class Doctor
 		this.docID=id;
 		this.name=name;
 		this.spec=spec;
-		this.phoneNum=phoneNum;
+		this.setPhoneNum(phoneNum);
 	}
 	public String getID(){
 		return this.docID;
@@ -32,6 +32,13 @@ public class Doctor
 	}
 	public void setSpec(String spec){
 		this.spec=spec;
+	}
+
+	public String getPhoneNum() {
+		return phoneNum;
+	}
+	public void setPhoneNum(String phoneNum) {
+		this.phoneNum = phoneNum;
 	}
 	
 	@Override 

@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.Iterator;
 public class Patient
 {
 	private String id;
@@ -13,8 +11,8 @@ public class Patient
 	public Patient(String PAT_ID, String PAT_NAME, String Allergy, String num, String DocID, String C_name, String C_Number){
 		this.id=PAT_ID;
 		this.name=PAT_NAME;
-		this.Allergy=Allergy;
-		this.phoneNumber=num;
+		this.setAllergy(Allergy);
+		this.setPhoneNumber(num);
 		this.doc = new Doctor(DocID);
 		this.person = new Contact(C_name, C_Number);
 	}
@@ -41,6 +39,18 @@ public class Patient
 	}
 	public void setDoc(Doctor doc) {
 		this.doc = doc;
+	}
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+	public String getAllergy() {
+		return Allergy;
+	}
+	public void setAllergy(String allergy) {
+		Allergy = allergy;
 	}
 		 
 	

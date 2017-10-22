@@ -10,11 +10,11 @@ public class Main
 	private ArrayList<Patient> pat_array;
 	private ArrayList<Disease> die_array;
 	public Main(){
-		this.doc_array= new ArrayList<Doctor>();
-		this.pat_array= new ArrayList<Patient>();
-		this.die_array= new ArrayList<Disease>();
+		this.doc_array=new ArrayList<Doctor>();
+		this.pat_array=new ArrayList<Patient>();
+		this.die_array=new ArrayList<Disease>();
 		
-	} 
+	}
 	public static ArrayList<Doctor> processTexttoDoc(String FilePath)throws IOException {
 		ArrayList<Doctor> result= new ArrayList<Doctor>();
 		Scanner scan = new Scanner(new File(FilePath));
@@ -63,5 +63,14 @@ public class Main
 		} catch(IOException e){
 			e.printStackTrace();
 		}	
+	}
+	public ArrayList<Disease> getDie_array() {
+		return die_array;
+	}
+	public ArrayList<Patient> getPat_array() {
+		return pat_array;
+	}
+	public ArrayList<Doctor> getDoc_array() {
+		return doc_array;
 	}	
 }

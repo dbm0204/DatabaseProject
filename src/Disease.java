@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.Iterator;
 public class Disease
 {
 	private String id;
@@ -13,8 +11,8 @@ public class Disease
 		this.id=id;
 		this.name=name;
 		this.hazard=hazard;
-		this.sypm= sypm;
-		this.meds = meds;
+		this.setSypm(sypm);
+		this.setMeds(meds);
 	}	
 	public String getName() {
 		return name;
@@ -33,6 +31,18 @@ public class Disease
 	}
 	public void setHazard(String hazard) {
 		this.hazard = hazard;
+	}
+	public String getSypm() {
+		return sypm;
+	}
+	public void setSypm(String sypm) {
+		this.sypm = sypm;
+	}
+	public String getMeds() {
+		return meds;
+	}
+	public void setMeds(String meds) {
+		this.meds = meds;
 	}
 			
 }
