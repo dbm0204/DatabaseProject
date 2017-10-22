@@ -1,3 +1,7 @@
+/**
+ * Hello World Example of of the SQLite API
+ * 
+ */
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
